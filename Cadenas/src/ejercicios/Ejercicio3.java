@@ -15,16 +15,23 @@ public class Ejercicio3 {
 
 		// Pedimos la frase al usuario
 		System.out.println("Introduzca la cadena: ");
-		frase1 = sc.next();
+		frase1 = sc.nextLine();
 
+		//Recorremos toda la cadena
 		for (int i = 0; i < frase1.length(); i++) {
+			
+			//Si la letra es un hueco en blanco
 			if (frase1.charAt(i) == ' ') {
+				//Aumentamos la cantidad de espacios
 				contEsp++;
 			}
 		}
 
+		//Mostramos la cantidad de espacios que hay
 		System.out.println("Hay " + contEsp + " espacios en la cadena introducida");
 
+		//Cerramos el escaner
+		sc.close();
 	}
 
 }
